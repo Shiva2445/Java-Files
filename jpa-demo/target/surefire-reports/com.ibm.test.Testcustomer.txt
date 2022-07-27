@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.ibm.test.Testcustomer
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE!
+com.ibm.test.Testcustomer.testfetch()  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.ibm.dao.customerDao.fetch(int)" because "com.ibm.test.Testcustomer.dao" is null
+	at com.ibm.test.Testcustomer.testfetch(Testcustomer.java:26)
+
+com.ibm.test.Testcustomer.testList()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.ibm.dao.customerDao.list()" because "com.ibm.test.Testcustomer.dao" is null
+	at com.ibm.test.Testcustomer.testList(Testcustomer.java:32)
+
+com.ibm.test.Testcustomer.testsave()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.ibm.dao.customerDao.save(com.ibm.entity.customer)" because "com.ibm.test.Testcustomer.dao" is null
+	at com.ibm.test.Testcustomer.testsave(Testcustomer.java:21)
+
